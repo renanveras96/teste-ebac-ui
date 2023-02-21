@@ -28,6 +28,15 @@ describe('Funcionalidade pagina de produtos', () => {
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quant)
         
     });
+
+    it.only('Deve adicionar produto ao carrinho - Usando comando customizado', () => {
+
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black', 2)
+
+
+
+        
+    });
     
 });
 
